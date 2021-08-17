@@ -100,7 +100,7 @@ p, h5 {
   color: var(--color-black);
   text-transform: uppercase;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.25rem;
 }
 
 .each-section__title p {
