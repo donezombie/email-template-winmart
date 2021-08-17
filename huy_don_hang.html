@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huy don hang</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="template-container">
+    <header>LOGO WINMART</header>
+
+    <div class="template-form">
+      <!-- Thanks -->
+      <div class="template-thanks">
+        <p class="template-thanks__first">Cám ơn quý khách {{Customer_name}} đã đặt hàng tại WinMart !</p>
+        <p class="template-thanks__second">
+          <span class="template-thanks__status">Đơn hàng #21802VAC71 đã được hủy.</span>
+          WinMart mong được tiếp tục phục vụ quý khách trong tương lai. Nếu quý khách có yêu cầu đặc biệt, vui lòng liên hệ nhân viên tư vấn tại hotline 02471066866 (Miễn phí)
+        </p>
+      </div>
+  
+      <!-- Information -->
+      <div class="each-section">
+        <div class="each-section__title">
+          <h5>THÔNG TIN ĐƠN HÀNG {{#21820VAC71}}</h5>
+          <p>Đặt ngày 10/8/2021 22:51:31</p>
+        </div>
+  
+        <hr />
+        <div class="each-section__content">
+          <div class="each-section__payment">
+            <h5 class="head">Thông tin thanh toán</h5>
+            <p>Lý Thu Phương</p>
+            <a href="#">phuonglt13@gmail.com</a>
+            <p>0936033186</p>
+          </div>
+          <div class="each-section__delivery">
+            <h5 class="head">Thông tin giao hàng</h5>
+            <p>Lý Thu Phương</p>
+            <a href="#">phuonglt13@gmail.com</a>
+            <p>0936033186</p>
+            <p>20 ngõ 324 Thụy Khuê, Tây Hồ, Hà Nội</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Delivery methods -->
+      <div class="delivery-methods">
+        <hr />
+          <p>
+            <b>Phương thức thanh toán:</b>
+            Thanh toán trực tuyến
+          </p>
+  
+          <p>
+            <b>Hình thức nhận hàng:</b>
+            Giao hàng tận nơi
+          </p>
+        <hr />
+      </div>
+  
+      <!-- Order detail -->
+      <div class="each-section">
+        <div class="each-section__title">
+          <h5>CHI TIẾT ĐƠN HÀNG</h5>
+        </div>
+  
+        <hr />
+        <div class="each-section__order">
+          <div class="product">
+            <h5 class="head">Sản phẩm</h5>
+            <p class="cell">Trứng cút Ba Huân hộp 30 quả</p>
+            <p class="cell">Cải thảo 500gr</p>
+            <p class="cell">Thịt heo xay đặc biệt MeatDeli 350gr </p>
+          </div>
+          <div class="unit">
+            <h5 class="head">Đơn vị tính</h5>
+            <p class="cell">Hộp</p>
+            <p class="cell">Kg</p>
+            <p class="cell">Kg</p>
+          </div>
+          <div class="price">
+            <h5 class="head">Đơn giá</h5>
+            <p class="cell">26.500đ</p>
+            <p class="cell">27.000đ</p>
+            <p class="cell">170.000đ</p>
+          </div>
+          <div class="amount">
+            <h5 class="head">Số lượng</h5>
+            <p class="cell">2</p>
+            <p class="cell">2</p>
+            <p class="cell">1</p>
+          </div>
+          <div class="pay">
+            <h5 class="head">Thành tiền</h5>
+            <p class="cell">53.000đ</p>
+            <p class="cell">13.500đ</p>
+            <p class="cell">59.465đ</p>
+          </div>
+  
+          <div class="total">
+            <div class="each-row">
+              <div class="label">Tổng tiền sản phẩm</div>
+              <div class="value">125.965đ</div>
+            </div>
+            <div class="each-row">
+              <div class="label">Khuyến mãi+ Chiết khấu 1%</div>
+              <div class="value">- 1.259đ</div>
+            </div>
+            <div class="each-row">
+              <div class="label">Giảm giá voucher</div>
+              <div class="value">0đ</div>
+            </div>
+            <div class="each-row">
+              <div class="label">Phí vận chuyển</div>
+              <div class="value">28.000đ</div>
+            </div>
+  
+            <div class="each-row">
+              <div class="label font-weight-bold">Tổng tiền phải trả</div>
+              <div class="value font-weight-bold">152.706đ</div>
+            </div>
+
+            <div class="each-row">
+              <div class="label font-weight-bold">Số tiền hoàn lại (*)</div>
+              <div class="value font-weight-bold">152.706đ</div>
+            </div>
+  
+            <div class="vat">
+              <span>(Đã bao gồm VAT)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="noted">
+        <p>Ghi chú:</p>
+        <p>(*) Số tiền hoàn lại sẽ được hoàn trả lại cho quý khách theo "Chính sách thanh toán của WinMart.vn" xem chi tiết <a href="#">tại đây</a></p>
+      </div>
+
+      <div class="actions">
+        <button>TIẾP TỤC MUA HÀNG</button>
+      </div>
+
+    </div>
+    <footer>
+      FOOTER
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
