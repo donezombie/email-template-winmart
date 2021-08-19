@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      :root {
+        --color-primary: #ed1c24;
+        --color-text: #fff;
+        --color-black: #000;
+      }
+
+      .template-container {
+        max-width: 1040px;
+        min-width: 1040px;
+        margin: auto;
+        line-height: 1.8;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        font-family: "Roboto", sans-serif;
+      }
+
+      .template-container hr {
+        margin-top: 0.825rem;
+        margin-bottom: 0.825rem;
+      }
+
+      .template-container .actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .template-container .actions button {
+        min-width: 30%;
+        margin-top: 1rem;
+        padding: 0.5rem 1.5rem;
+
+        color: var(--color-text);
+        background-color: var(--color-primary);
+
+        outline: 0;
+        border: none;
+        border-radius: 0.25rem;
+      }
+
+      .template-container .noted {
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .template-container footer,
+      .template-container header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding: 2rem;
+        background-color: var(--color-primary);
+        color: var(--color-text);
+      }
+
+      p,
+      h5 {
+        margin: 0;
+      }
+
+      .head {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .template-form {
+        padding: 3rem 2rem;
+      }
+
+      .template-thanks {
+        margin-bottom: 1rem;
+      }
+
+      .template-thanks__first {
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .template-thanks__status {
+        color: var(--color-primary);
+      }
+
+      /* Each section */
+      .each-section {
+        margin-bottom: 1rem;
+      }
+
+      .each-section__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .each-section__title h5 {
+        color: var(--color-black);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+
+      .each-section__title p {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 0.825rem;
+      }
+
+      .each-section__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .each-section__content p,
+      .each-section__content a {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .each-section__order {
+        display: grid;
+        grid-template-areas:
+          "product unit price amount pay"
+          ". . . total total";
+      }
+      .each-section__order .product {
+        grid-area: product;
+      }
+
+      .each-section__order .unit {
+        grid-area: unit;
+        text-align: center;
+      }
+
+      .each-section__order .price {
+        grid-area: price;
+        text-align: end;
+      }
+
+      .each-section__order .amount {
+        grid-area: amount;
+        text-align: center;
+      }
+
+      .each-section__order .pay {
+        grid-area: pay;
+        text-align: end;
+      }
+
+      .each-section__order .total {
+        padding-top: 0.5rem;
+        grid-area: total;
+      }
+
+      .each-section__order .cell {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .total .each-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .vat {
+        display: flex;
+        justify-content: flex-end;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .font-weight-bold {
+        font-weight: bold;
+      }
+
+      .delivery-methods {
+        margin-bottom: 1rem;
+      }
+
+      .delivery-methods p {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+    <div class="template-container">
+      <header>LOGO WINMART</header>
+
+      <div class="template-form">
+        <!-- Thanks -->
+        <div class="template-thanks">
+          <p class="template-thanks__first">
+            Cám ơn quý khách {{Customer_name}} đã đặt hàng tại WinMart !
+          </p>
+          <p class="template-thanks__second">
+            <span class="template-thanks__status"
+              >Đơn hàng {{#21802VAC71}} đã được tạo thành công.</span
+            >
+            Nếu quý khách có yêu cầu đặc biệt, vui lòng liên hệ nhân viên tư vấn
+            tại hotline 02471066866 (Miễn phí)
+          </p>
+        </div>
+
+        <!-- Information -->
+        <div class="each-section">
+          <div class="each-section__title">
+            <h5>THÔNG TIN ĐƠN HÀNG {{#21820VAC71}}</h5>
+            <p>Đặt ngày 10/8/2021 22:51:31</p>
+          </div>
+
+          <hr />
+          <div class="each-section__content">
+            <div class="each-section__payment">
+              <h5 class="head">Thông tin thanh toán</h5>
+              <p>Lý Thu Phương</p>
+              <a href="#">phuonglt13@gmail.com</a>
+              <p>0936033186</p>
+            </div>
+            <div class="each-section__delivery">
+              <h5 class="head">Thông tin giao hàng</h5>
+              <p>Lý Thu Phương</p>
+              <a href="#">phuonglt13@gmail.com</a>
+              <p>0936033186</p>
+              <p>20 ngõ 324 Thụy Khuê, Tây Hồ, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delivery methods -->
+        <div class="delivery-methods">
+          <hr />
+          <p>
+            <b>Phương thức thanh toán:</b>
+            Thanh toán trực tuyến
+          </p>
+
+          <p>
+            <b>Hình thức nhận hàng:</b>
+            Giao hàng tận nơi
+          </p>
+          <hr />
+        </div>
+
+        <!-- Order detail -->
+        <div class="each-section">
+          <div class="each-section__title">
+            <h5>CHI TIẾT ĐƠN HÀNG</h5>
+          </div>
+
+          <hr />
+          <div class="each-section__order">
+            <div class="product">
+              <h5 class="head">Sản phẩm</h5>
+              <p class="cell">Trứng cút Ba Huân hộp 30 quả</p>
+              <p class="cell">Cải thảo 500gr</p>
+              <p class="cell">Thịt heo xay đặc biệt MeatDeli 350gr</p>
+            </div>
+            <div class="unit">
+              <h5 class="head">Đơn vị tính</h5>
+              <p class="cell">Hộp</p>
+              <p class="cell">Kg</p>
+              <p class="cell">Kg</p>
+            </div>
+            <div class="price">
+              <h5 class="head">Đơn giá</h5>
+              <p class="cell">26.500đ</p>
+              <p class="cell">27.000đ</p>
+              <p class="cell">170.000đ</p>
+            </div>
+            <div class="amount">
+              <h5 class="head">Số lượng</h5>
+              <p class="cell">2</p>
+              <p class="cell">2</p>
+              <p class="cell">1</p>
+            </div>
+            <div class="pay">
+              <h5 class="head">Thành tiền</h5>
+              <p class="cell">53.000đ</p>
+              <p class="cell">13.500đ</p>
+              <p class="cell">59.465đ</p>
+            </div>
+
+            <div class="total">
+              <div class="each-row">
+                <div class="label">Tổng tiền sản phẩm</div>
+                <div class="value">125.965đ</div>
+              </div>
+              <div class="each-row">
+                <div class="label">Khuyến mãi+ Chiết khấu 1%</div>
+                <div class="value">- 1.259đ</div>
+              </div>
+              <div class="each-row">
+                <div class="label">Giảm giá voucher</div>
+                <div class="value">0đ</div>
+              </div>
+              <div class="each-row">
+                <div class="label">Phí vận chuyển</div>
+                <div class="value">28.000đ</div>
+              </div>
+
+              <div class="each-row">
+                <div class="label font-weight-bold">Tổng tiền phải trả</div>
+                <div class="value font-weight-bold">152.706đ</div>
+              </div>
+
+              <div class="vat">
+                <span>(Đã bao gồm VAT)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button>CHI TIẾT ĐƠN HÀNG</button>
+        </div>
+      </div>
+      <footer>FOOTER</footer>
+    </div>
+  </body>
+</html>
